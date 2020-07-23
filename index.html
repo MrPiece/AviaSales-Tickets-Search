@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AviaSales</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ****** faviconit.com favicons ****** -->
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="faviconit/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="faviconit/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="faviconit/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="faviconit/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="faviconit/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="faviconit/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="faviconit/favicon-16.png">
+	<link rel="apple-touch-icon" href="faviconit/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="faviconit/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="faviconit/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="faviconit/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="faviconit/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="faviconit/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="faviconit/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="faviconit/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="faviconit/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="faviconit/favicon-144.png">
+	<meta name="msapplication-config" content="faviconit/browserconfig.xml">
+	<!-- ****** faviconit.com favicons ****** -->
+</head>
+<body>
+  <div id="app">
+    <h1 class="title">Поиск билетов AviaSales</h1>
+
+    <div class="container">
+      <form action="#" class="search-form">
+        <div class="inputs-line">
+          <div class="input">
+            <label for="ticket-from">Откуда</label>
+            <input type="text" name="ticket-from" id="ticket-from" autocomplete="off">
+          </div>
+
+          <div class="input">
+            <label for="ticket-to">Куда</label>
+            <input type="text" name="ticket-to" id="ticket-to" autocomplete="off">
+          </div>
+
+          <div class="input">
+            <label for="ticket-on">Дата вылета</label>
+            <input type="date" name="ticket-on" id="ticket-on" autocomplete="off">
+          </div>
+        </div>
+  
+        <button type="submit" class="action">
+          <span>Найти билеты</span>
+          <i class="plane"></i>
+        </button>
+      </form>
+
+      <div class="tickets">
+        <h2>Дешёвые билеты на выбранную дату</h2>
+        <ul id="selected-date">
+          <li class="ticket">
+            <header>
+              <h3>Русский полёт</h3>
+            </header>
+
+            <div id="buy">
+              <a class="action">Купить за 2700₽</a>
+            </div>
+
+            <div id="info">
+              <div class="block-left">
+                <p id="city-from">Вылет из города: </p>
+                <p id="date">2020-03-29</p>
+              </div>
+
+              <div class="block-right">
+                <p id="transfers">Без пересадок</p>
+                <p id="city-to">Город назначения: </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <h2>Дешёвые билеты на другие даты</h2>
+        <ul id="other-date">
+          <li class="ticket">
+            <header>
+              <h3>Русский полёт</h3>
+            </header>
+
+            <div id="buy">
+              <a class="action">Купить за 2700₽</a>
+            </div>
+
+            <div id="info">
+              <div class="block-left">
+                <p id="city-from">Вылет из города: </p>
+                <p id="date">2020-03-29</p>
+              </div>
+
+              <div class="block-right">
+                <p id="transfers">Без пересадок</p>
+                <p id="city-to">Город назначения: </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>

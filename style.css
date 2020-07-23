@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input, button {
+  border: none;
+  outline: none;
+}
+
+.action {
+  border-radius: 5px;
+  background-color: #f57c00;
+  color: #FFF;
+  font-size: 1.3em;
+  font-family: Nunito;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.action:hover {
+  background-color: #ff9800;
+}
+
+.action:active {
+  background-color: #f57c00;
+}
+
+h1, h2, h3 {
+  color: #FFF;
+  font-family: Nunito;
+}
+
+#app {
+  background-color: #05263f;
+  min-height: 100vh;
+}
+
+#app > .title {
+  text-align: center;
+  padding-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.container {
+  max-width: 1184px;
+  margin: auto;
+  font-family: Nunito;
+}
+
+.container > * {
+  margin: 60px 0;
+}
+
+.search-form .inputs-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.search-form .inputs-line * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.search-form .inputs-line div {
+  margin: 0 4px;
+  position: relative;
+}
+
+.search-form .inputs-line div:first-child,
+.search-form .inputs-line div:last-child {
+  margin: 0px;
+}
+
+.search-form .inputs-line div:first-child input {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.search-form .inputs-line div:last-child input {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.search-form .inputs-line label {
+  color: #FFF;
+  left: 5px;
+  top: -2px;
+  position: relative;
+}
+
+.search-form .inputs-line input {
+  background-color: #1e3c53;
+  height: 40px;
+  color: #FFF;
+  font-size: 1em;
+  padding: 0 10px;
+  position: relative;
+  font-family: Nunito;
+  width: 100%;
+  -webkit-box-shadow: inset 0 0 0 0 transparent;
+          box-shadow: inset 0 0 0 0 transparent;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.search-form .inputs-line input:focus {
+  -webkit-box-shadow: inset 0 0 0 2px #f57c00;
+          box-shadow: inset 0 0 0 2px #f57c00;
+}
+
+.search-form .inputs-line input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+  padding: 11px;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.search-form .inputs-line input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  background-color: #f57c00;
+}
+
+.search-form .inputs-line input[type="date"]:focus::-webkit-calendar-picker-indicator {
+  background-color: #f57c00;
+}
+
+.search-form .inputs-line ul.matches-list {
+  width: 98%;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #1e3c53;
+  list-style: none;
+  max-height: 210px;
+  overflow: auto;
+}
+
+.search-form .inputs-line ul.matches-list::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+.search-form .inputs-line ul.matches-list::-webkit-scrollbar-thumb {
+  background-color: #f57c00;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.search-form .inputs-line ul.matches-list li {
+  color: #FFF;
+  width: 100%;
+  font-family: Nunito;
+  font-size: 1em;
+  padding: 10px;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.search-form .inputs-line ul.matches-list li:hover {
+  background-color: #f57c00;
+}
+
+.search-form button.action[type="submit"] {
+  padding: 10px 40px;
+  margin: auto;
+}
+
+.search-form button.action[type="submit"] i.plane {
+  display: inline-block;
+  background-image: url("https://www.aviasales.ru/helios-assets/plane-0c51bd9fc764931bcd5ca6f570958296.svg");
+  width: 35px;
+  height: 40px;
+  margin-left: 7px;
+}
+
+.tickets {
+  background-color: #05263f;
+}
+
+.tickets h2 {
+  text-align: center;
+}
+
+.tickets .ticket {
+  margin: 20px 0;
+  color: #FFF;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "buy info info";
+}
+
+.tickets .ticket > * {
+  margin: 2px;
+}
+
+.tickets .ticket > header {
+  background-color: #1e3c53;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tickets .ticket > header h3 {
+  text-align: center;
+}
+
+.tickets .ticket > #buy {
+  background-color: #1e3c53;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: buy;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-left-radius: 10px;
+}
+
+.tickets .ticket > #buy a.action {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.tickets .ticket > #info {
+  background-color: #1e3c53;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  border-bottom-right-radius: 5px;
+  padding: 20px;
+}
+
+.tickets .ticket > #info .block-left {
+  float: left;
+  width: 50%;
+}
+
+.tickets .ticket > #info .block-right {
+  float: right;
+  width: 50%;
+}
+
+.tickets .ticket > #info p {
+  margin-bottom: 20px;
+}
+
+.tickets .ticket > #info p:last-child {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
