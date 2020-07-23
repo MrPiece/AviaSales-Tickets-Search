@@ -1,5 +1,5 @@
 <?php
-define('API_KEY', '24a15793cd1e22fbb9299b7d585debe1');
+define('API_KEY', 'xxx');
 
 $data = json_decode( file_get_contents('php://input'), true );
 
